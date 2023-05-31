@@ -1,1 +1,36 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>하이퍼 링크</title>
+  </head>
+  <body>
+    <h1 title="여기는 제목입니다.">하이퍼링크 속성</h1>
+    <div title="마우스를 올리면 툴팁이 보입니다.">
+      <a href="/">더보기</a>
+    </div>
+
+    <div>
+      <a href="/" title="다운로드">
+        <img src="images/brochure.png" alt="카페 W 강좌 브로슈어" />
+      </a>
+    </div>
+
+    <!-- alt 속성은 이미지가 표시되지 않을 때 이미지를 대체하는 텍스트를 제공하는 데 사용되는 반면, title 속성은 이미지에 대한 설명을 제공하는 데 사용된다. -->
+    <!-- 따라서 alt 속성 대신 title 속성을 입력해선 안된다. -->
+    <div>
+      <a href="/">
+        <img src="images/brochure.png" title="다운로드" />
+        <img src="images/brochure.png" alt="다운로드" title="다운로드" />
+      </a>
+    </div>
+
+    <div>
+      <a href="./video/stories.mp4" aria-label="다운로드" download>
+        구글 개발자 이야기 비디오
+      </a>
+    </div>
+  </body>
+</html>
